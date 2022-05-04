@@ -5,7 +5,7 @@ function ProjectList({ projects }) {
   console.log(projects);
 
   const oneProject = projects.map(project =>{
-    return <div key={project.id}>{ProjectItem(project)}</div>
+    return <React.Fragment key={project.id}>{ProjectItem(project)}</React.Fragment>
   })  
   return (
     <div id="projects">
